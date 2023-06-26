@@ -3,7 +3,7 @@ name: Email on Push
 on:
   push:
     branches:
-      - main  # Change this to your desired branch
+      - gitactions  # Change this to your desired branch
 
 jobs:
   sendEmail:
