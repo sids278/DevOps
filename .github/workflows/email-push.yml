@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-        working-directory: Devops
+        working-directory: gitactions
 
       - name: Send email
         env:
