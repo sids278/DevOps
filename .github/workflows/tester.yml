@@ -20,5 +20,8 @@ jobs:
 
       # Add any additional steps here for setting up dependencies or environment
 
+      - name: Install dependencies
+        run: npm install
+
       - name: Run Tests
         run: npm test  # Replace with your test command
