@@ -1,0 +1,24 @@
+name: Test Code on Branch
+
+on:
+  push:
+    branches:
+      - gitactions  # Replace with your desired branch name
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      # Add any additional steps here for setting up dependencies or environment
+
+      - name: Run Tests
+        run: npm test  # Replace with your test command
