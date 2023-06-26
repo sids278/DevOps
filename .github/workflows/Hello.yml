@@ -1,0 +1,14 @@
+name: Hello World
+
+on:
+  push:
+    branches:
+      - gitactions  # Change this to your desired branch
+
+jobs:
+  helloother:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello Job
+        run: echo "Hello World"
