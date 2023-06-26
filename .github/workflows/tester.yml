@@ -3,7 +3,7 @@ name: Test Code on Branch
 on:
   push:
     branches:
-      - gitactions  # Replace with your desired branch name
+      - master  # Replace with your desired branch name
 
 jobs:
   test:
